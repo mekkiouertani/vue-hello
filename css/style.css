@@ -1,5 +1,8 @@
-#app-vue{
+body {
     font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-size: 50px;
+}
+#app-vue{
     height: 100vh;
     margin: auto;
     overflow: auto;
@@ -19,4 +22,7 @@
     100% {
         background-position: 0% 0%;
     }
+}
+h1{
+    font-size: 2em;
 }
