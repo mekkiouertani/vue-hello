@@ -22,8 +22,8 @@
             <p>Hai premuto il pulsante: {{count}} volte</p>
             <div class="border-top py-2">
                 <form  @submit.prevent="clg">
-                    <input type="text" @prevent @keyup.enter=""  v-model="input" class="w-100 text-center" placeholder="inserisci il nome con ENTER">
-                    <button class="d-none"></button>
+                    <input type="text" @prevent @keyup.enter="" v-model="input" class="w-100 text-center" placeholder="inserisci il nome con ENTER">
+                    <button class="d-none" @click="input += '!'"></button>
                 </form>
                 <p >{{text}}  {{getInput}} </p>
             </div>
