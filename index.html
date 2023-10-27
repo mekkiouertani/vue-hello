@@ -14,12 +14,19 @@
 
 <body>
     <div id="app-vue" class="d-flex justify-content-center align-items-center bg-black">
-        <div>
+        <div class="wrapper">
             <div>
                 <h1 v-bind:class="colorBlue" class="px-2 text-center">{{message}}</h1>
-                <button  @click="changeColor"  class="d-block text-center w-100 text-uppercase fs-3">Change color</button>
+                <button  @click=" btnEffect"  class="d-block text-center w-100 text-uppercase fs-3">Change color</button>
             </div>
             <p>Hai premuto il pulsante: {{count}} volte</p>
+            <div class="border-top py-2">
+                <form  @submit.prevent="clg">
+                    <input type="text" @prevent @keyup.enter=""  v-model="input" class="w-100 text-center" placeholder="inserisci il nome con ENTER">
+                    <button class="d-none"></button>
+                </form>
+                <p >{{text}}  {{getInput}} </p>
+            </div>
         </div>
 
     </div>

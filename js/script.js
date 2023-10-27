@@ -5,15 +5,25 @@ const { createApp } = Vue
             return{
                 message : "Hello Vue!",
                 colorBlue: "text-primary",
-                count: 0
+                count: 0,
+                text: "Ciao", 
+                input: "",
+                getInput: "",
             }
         },
         methods: {
-            changeColor(){
+            btnEffect(){
                 this.count++
                 this.colorBlue = this.colorBlue === "text-primary" ? "bg-warning" : "text-primary"
-            }
-            
-            
+            },
+            clg(){
+                this.getInput = this.input,
+                console.log(this.input),
+                console.log(this.getInput);
+
+            },
+            rstInput(){
+                this.input = "";
+            },
         }
     }).mount('#app-vue');
