@@ -9,4 +9,4 @@ const { createApp } = Vue
         methods: {
 
         }
-    }).mount('#app-Vue');
+    }).mount('#app-vue');
