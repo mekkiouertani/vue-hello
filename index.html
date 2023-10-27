@@ -17,7 +17,11 @@
         <div class="wrapper">
             <div>
                 <h1 v-bind:class="colorBlue" class="px-2 text-center">{{message}}</h1>
-                <button  @click=" btnEffect"  class="d-block text-center w-100 text-uppercase fs-3">Change color</button>
+                
+                <button  @click=" btnEffect"  class="d-block text-center w-100 text-uppercase fs-3 position-relative">
+                    <span><img :src="img"  alt="logo boolean" class="position-absolute "></span>
+                    Change color
+                </button>
             </div>
             <p>Hai premuto il pulsante: {{count}} volte</p>
             <div class="border-top py-2">

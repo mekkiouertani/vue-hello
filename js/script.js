@@ -9,6 +9,7 @@ const { createApp } = Vue
                 text: "Ciao", 
                 input: "",
                 getInput: "",
+                img: "https://hiringplatform.boolean.careers/images/logo.png"
             }
         },
         methods: {
