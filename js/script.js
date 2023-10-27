@@ -17,13 +17,8 @@ const { createApp } = Vue
                 this.colorBlue = this.colorBlue === "text-primary" ? "bg-warning" : "text-primary"
             },
             clg(){
-                this.getInput = this.input,
-                console.log(this.input),
-                console.log(this.getInput);
-
-            },
-            rstInput(){
-                this.input = "";
+                this.getInput = this.input  
+                this.input = ""
             },
         }
     }).mount('#app-vue');
