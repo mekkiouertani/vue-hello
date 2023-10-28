@@ -32,10 +32,6 @@ const { createApp } = Vue
                 this.input = "";
                 console.log(this.getInput);
             },
-            printVolte(){
-                if(getInput === 1){
-                    manyTimes = "volta"
-                }
-            }
+            
         }
     }).mount('#app-vue');

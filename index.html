@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Rubik+Pixels&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Rubik+Pixels&display=swap" rel="stylesheet">
     <title>Vue Hello</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <div id="app-vue" class="d-flex justify-content-center align-items-center bg-black">
         <div class="wrapper">
+            
             <div>
                 <h1 v-bind:class="colorBlue" class="px-2 text-center">{{message}}</h1>
                 <button  @click=" btnEffect"  class="d-block text-center w-100 text-uppercase fs-3 position-relative">
@@ -23,6 +25,7 @@
                 </button>
             </div>
             <p>Hai premuto il pulsante: {{count}} {{manyTimes}}</p>
+
             <div class="border-top py-2">
                 <form  @submit.prevent="printName">
                     <input type="text" @prevent @keyup.enter="" v-model="input" class="w-100 text-center" placeholder="inserisci il nome con ENTER">
@@ -30,8 +33,8 @@
                 </form>
                 <p >{{text}}  {{getInput}} </p>
             </div>
-        </div>
 
+        </div>
     </div>
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
